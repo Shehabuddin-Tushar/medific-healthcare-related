@@ -1,0 +1,64 @@
+.loginpage{
+    width: 500px;
+  margin: 100px auto;
+  background-color: #3b82fc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.loginpage h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(26, 101, 231);
+}
+
+.loginpage input[type="text"],input[type="email"],input[type="password"]{
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.loginpage input[type="submit"]{
+    background-color: rgb(114, 95, 199);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.loginpage input[type="submit"]:hover{
+  background-color: rgb(81, 50, 218);
+}
+
+.googlebtn{
+  margin-top: 20px;
+  background-color: rgb(117, 24, 204);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color:white
+ 
+}
+
+.googlebtn:hover{
+  background-color: rgb(62, 24, 231);
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .loginpage{
+    width: 350px;
+  
+}
+}

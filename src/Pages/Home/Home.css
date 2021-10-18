@@ -1,0 +1,106 @@
+.home-banner{
+    background:url("https://i.postimg.cc/Xvp8JGQg/medicalphoto.jpg");
+    height: 450px;
+    background-size: 100% 100%;
+    margin-bottom: -100px;
+    
+}
+.emargency{
+
+    margin-bottom: 20px;
+   
+}
+
+.shad{
+    text-shadow: 3px 3px rgb(63, 63, 216);
+}
+
+.services{
+   
+    clear:right
+}
+.show-services{
+    padding: 0px 100px;
+    margin-bottom: 10px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.single-services{
+  margin-left: 20px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+}
+.single-services h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px gray;
+}
+
+.single-services p{
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.single-services a{
+    background-color:#3b82fc;
+    padding: 5px 15px;
+    
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.single-services a:hover{
+    background-color:#053ea0;
+  
+}
+
+.single-services .icon-class{
+    font-size: 30px;
+}
+
+.all-services-btn{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.all-services-btn a{
+    background-color:#4d86e9;
+    padding: 5px 25px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    border-radius: 5px;
+    margin-bottom: 30px; 
+}
+
+.all-services-btn a:hover{
+    background-color:#0f4cb6;
+ 
+}
+
+
+@media only screen and (max-width: 700px) {
+    .show-services{
+        padding: 0px 20px;
+       grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .show-services{
+        padding: 0px 20px;
+       grid-template-columns: 1fr;
+    }
+}

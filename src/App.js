@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Pages/Home/Home";
+import Hader from "./shared/Hader/Hader";
+import {Route,Switch,Redirect} from 'react-router-dom'
+import Service from "./Pages/Services/Service";
+import Details from "./Pages/Details/Details";
+import Login from "./Pages/Login/Login";
+import Privateroute from "./Privateroute/Privateroute";
+import useFirebase from "./hooks/Firebasehook";
 
 function App() {
+  const {user}=useFirebase();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Hader/>
+       <Switch>
+           <Route exact path="/">
+             <Home/>
+           </Route>
+           <Route path="/home">
+              <Home/>
+           </Route>
+           <Route path="/service">
+              <Service/>
+           </Route>
+
+           <Privateroute path="/details/:id">
+             <Details/>
+           </Privateroute>
+
+           <Route path="/login">
+           {user.emailVerified? <Redirect to="/home" /> : <Login/>}
+             
+           </Route>
+           
+       </Switch>
+       
     </div>
   );
 }
