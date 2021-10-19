@@ -19,7 +19,7 @@ function Details() {
         <div className="details-wrapper">
             <div className="details-banner">
                 <div className="details-img">
-                   <img src={service.img} className=""/>
+                   <img src={service.img} />
                 </div>
                 
                 <div className="">
