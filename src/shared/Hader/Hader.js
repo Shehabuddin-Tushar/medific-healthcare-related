@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useFirebase from '../../hooks/Firebasehook';
 import './Hader.css'
 function Hader() {
@@ -37,9 +37,9 @@ function Hader() {
                     <h3>+00 1857193407</h3>
                  </div>
                  <div className="hidden md:flex space-x-6">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <Link to="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></Link>
+                    <Link to="ps://twitter.com/htt"><i class="fab fa-twitter"></i></Link>
+                    <Link to="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></Link>
                  </div>
             </div>
            {/* navbar goes here */}
