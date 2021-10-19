@@ -1,10 +1,9 @@
 import { Redirect, Route } from "react-router";
-//import useAuth from "../../hooks/useAuth";
-import {useState} from 'react'
-import useFirebase from "../hooks/Firebasehook";
+
+import useAuth from "../hooks/useAuth";
 
 function Privateroute({ children, ...rest }) {
-      let {user,isloading} =useFirebase()
+      let {user,isloading} =useAuth()
       if(isloading){
        return "...loading";
       }
@@ -13,7 +12,7 @@ function Privateroute({ children, ...rest }) {
       <Route
         {...rest}
         render={({ location }) =>
-          user.email ? (
+          user.emailVerified ? (
             children
           ) : (
             <Redirect

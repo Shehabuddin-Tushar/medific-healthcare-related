@@ -7,7 +7,7 @@ function Home() {
 
   useEffect(()=>{
      
-    fetch("services.json").then(res=>res.json()).then(data=>setServices(data))
+    fetch(`https://shehabuddin-tushar.github.io/first-demo/services.json`).then(res=>res.json()).then(data=>setServices(data))
 
   },[])
     return (

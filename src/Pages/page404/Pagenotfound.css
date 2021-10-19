@@ -1,0 +1,24 @@
+.pagenotfound{
+    background:url("https://i.postimg.cc/PfDp4sdw/404page.jpg");
+    height: 600px;
+    background-size: 100% 100%;
+    margin-top: -120px; 
+    z-index:9999;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.pagenotfound a{
+  font-size: 40px;
+  background-color:rgb(63, 63, 216);
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.pagenotfound a:hover{
+    background-color:rgb(10, 10, 170);  
+}

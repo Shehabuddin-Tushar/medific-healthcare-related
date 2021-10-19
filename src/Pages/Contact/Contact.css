@@ -1,0 +1,90 @@
+.contactuswithcenter{
+    padding: 50px;
+    display: flex;
+    
+}
+
+.contactform{
+ width: 50%;
+ background-color: #60a5fa;
+ padding: 15px;
+ border-radius: 5px;
+}
+
+.contactform input[type="text"]{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.optionaldetails{
+  display: flex;
+}
+
+.firstoptional{
+  margin-right: 10px;
+}
+
+.secondoptional{
+
+}
+.contactform input[type="submit"]{
+    padding: 10px 40px;
+    color:#fff;
+    background-color: #0f5ebe;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contactform input[type="submit"]:hover{
+  background-color: #083266;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.contactdetails{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.contactdetails map{
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .contactuswithcenter{
+     
+        display: block;
+        
+    }
+    .contactdetails{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contactform{
+        width: 100%;
+        margin-bottom: 20px;
+     
+       }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .contactuswithcenter{
+      
+        display: block;
+        
+    }
+    .contactdetails{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contactform{
+        width: 100%;
+        margin-bottom: 20px;
+     
+       }
+    
+}

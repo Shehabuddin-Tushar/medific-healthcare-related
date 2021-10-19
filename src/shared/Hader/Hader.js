@@ -69,7 +69,7 @@ function Hader() {
 
                 {/* secondary nav  */}
                 <div className="flex items-center space-x-1">
-                {user.emailVerified?<h2 className="py-5 px-3 font-bold">Tushar</h2>:""}
+                {user.emailVerified?<h2 className="py-5 px-3 font-bold">{user.displayName}</h2>:""}
                     {
                      user.emailVerified?<button onClick={Logout}  className="logoutbtn">logout</button>:
                     <NavLink to="/login" className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Login</NavLink>

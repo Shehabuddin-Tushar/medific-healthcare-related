@@ -7,21 +7,18 @@ function Details() {
   
 
    
-   const mydata=async()=>{
-      const result= await fetch(`http://localhost:3000/services.json`);
-      const datas=await result.json();
-      setService(datas.find(data=>data.id===id));
-      
-   }
+   
    useEffect(()=>{
-        mydata();
+       fetch(`https://shehabuddin-tushar.github.io/first-demo/services.json`)
+      .then(res=>res.json())
+      .then(datas=>setService(datas.find(data=>data.id===id)));
     
     },[]);
 
     return (
         <div className="details-wrapper">
             <div className="details-banner">
-                <div className="details-img shadow-2xl">
+                <div className="details-img">
                    <img src={service.img} className=""/>
                 </div>
                 
