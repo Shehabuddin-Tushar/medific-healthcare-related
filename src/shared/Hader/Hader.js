@@ -37,9 +37,9 @@ function Hader() {
                     <h3>+00 1857193407</h3>
                  </div>
                  <div className="hidden md:flex space-x-6">
-                    <Link to="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></Link>
-                    <Link to="ps://twitter.com/htt"><i class="fab fa-twitter"></i></Link>
-                    <Link to="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></Link>
+                    <a href="//facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="//twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="//www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
                  </div>
             </div>
            {/* navbar goes here */}

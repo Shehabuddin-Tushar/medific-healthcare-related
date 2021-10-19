@@ -30,9 +30,9 @@ function Footer() {
                  <h3 className="text-3xl mb-3"><Link to="/home"><i class="fas fa-phone-alt"></i> 01857195638</Link></h3>
                  <h2 className="text-3xl mb-3"><Link to="/contact"><i class="fas fa-map-marker-alt"></i> View our location</Link></h2>
                  <div className="social-link">
-                     <Link to="https://twitter.com/"><i class="fab fa-twitter"></i></Link>
-                     <Link to="https://www.facebook.com/"><i class="fab fa-facebook"></i></Link>
-                     <Link to="https://www.youtube.com/"><i class="fab fa-youtube"></i></Link>
+                     <a href="//twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                     <a href="//www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                     <a href="//www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
 
                  </div>
             </div>
