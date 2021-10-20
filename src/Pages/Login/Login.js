@@ -55,6 +55,7 @@ function Login() {
   const handlecheck=(e)=>{
        setIschecked(e.target.checked);
        console.log(ischecked)
+       setError();
        setSuccess();
        setUservalues({});
        setLoginuser({})
